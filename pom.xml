@@ -2,19 +2,16 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	
-	<!-- TODO : #1 maven project 생성. -->
 	<groupId>com.nhnent.edu</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
-	<!-- TODO : #2 packaging은 jar로 지정. -->
 	<!-- Spring Boot는 단독실행형 애플리케이션을 만들어 준다. -->
 	<packaging>jar</packaging>
 	
 	<name>spring-boot</name>
 	<url>http://maven.apache.org</url>
 	
-	<!-- TODO : #3 Spring Boot 최상위 dependency를 설정한다. -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -22,7 +19,6 @@
     </parent>		
 
 	<dependencies>
-		<!-- TODO : #4 `spring-boot-starter-web`을 설정해서 웹 개발용 라이브러리를 설정한다. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -38,7 +34,6 @@
 	
 	<build>
 		<plugins>
-			<!-- TODO : #5 Spring Boot 플러그인을 설정한다. -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
