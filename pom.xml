@@ -30,6 +30,12 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- TODO : #1 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-freemarker</artifactId>
+		</dependency>
+
 	</dependencies>
 	
 	<build>
