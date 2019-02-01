@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO : #2 -->
 <html lang="ko">
 <head>
     <meta charset="utf-8">
