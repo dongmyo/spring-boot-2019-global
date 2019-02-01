@@ -5,9 +5,9 @@
 	<groupId>com.nhnent.edu</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	<!-- Spring Boot는 단독실행형 애플리케이션을 만들어 준다. -->
-	<packaging>jar</packaging>
+
+	<!-- TODO : #1 war로 패키징 -->
+	<packaging>war</packaging>
 	
 	<name>spring-boot</name>
 	<url>http://maven.apache.org</url>
@@ -30,10 +30,18 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- TODO : #1 -->
+		<!-- TODO : #2 JSTL 지원 및 JSP 컴파일을 위해서 두개의 의존성 라이브러리를 추가 -->
+		<!-- JSTL for JSP -->
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-freemarker</artifactId>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+		</dependency>
+
+		<!-- Need this to compile JSP -->
+		<dependency>
+			<groupId>org.apache.tomcat.embed</groupId>
+			<artifactId>tomcat-embed-jasper</artifactId>
+			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>
