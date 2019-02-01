@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicLong;
 
-// TODO : #1 Custom Actuator
 @Component
 @Endpoint(id = "counter")
 public class CounterActuator {
