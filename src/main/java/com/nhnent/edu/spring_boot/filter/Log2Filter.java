@@ -10,7 +10,6 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.IOException;
 
-// TODO : #5 Filter 예제 1.
 public class Log2Filter extends GenericFilterBean {
     private static final Logger LOGGER = LoggerFactory.getLogger(Log2Filter.class);
 

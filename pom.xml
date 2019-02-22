@@ -30,7 +30,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- TODO : #1 -->
+		<!-- TODO : #1 `spring-boot-starter-freemarker` -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
