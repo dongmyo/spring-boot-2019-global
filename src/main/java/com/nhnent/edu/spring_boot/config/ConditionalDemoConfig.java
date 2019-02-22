@@ -2,6 +2,9 @@ package com.nhnent.edu.spring_boot.config;
 
 import com.nhnent.edu.spring_boot.component.SayNoComponent;
 import com.nhnent.edu.spring_boot.component.SayYesComponent;
+
+import java.util.Objects;
+
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
@@ -27,7 +30,7 @@ public class ConditionalDemoConfig {
         	// TODO : #1 return true if test1 property exists in application.properties,
         	//           return false or else
             //        cf.) context.getEnvironment().getProperty("test1")
-            return false;
+            return Objects.nonNull(context.getEnvironment().getProperty("test1"));
         }
     }
 
@@ -68,10 +71,10 @@ public class ConditionalDemoConfig {
 
     // TODO : #3 sayYesComponentOnBean 빈이 생성되도록 SayNoComponent 빈을 선언해 주세요.
     // TODO : #3 create a SayNoComponent bean in order to create the sayYesComponentOnBean.
-    /*
-     * ???
-     */
-
+    @Bean
+    public SayNoComponent sayNoComponent() {
+    	return new SayNoComponent("NO!!!!");
+    }
 
     /*
      *  프로젝트에 SayNoComponent 타입의 빈이 등록되어 있으면 아래 빈을 생성한다.
