@@ -24,12 +24,16 @@ public class ConditionalDemoConfig {
         public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
             // TODO : #1 application.properties 파일에 test1 속성이 존재하면 true, 아니면 false를 반환하도록 수정하세요.
             //        cf.) context.getEnvironment().getProperty("test1")
+        	// TODO : #1 return true if test1 property exists in application.properties,
+        	//           return false or else
+            //        cf.) context.getEnvironment().getProperty("test1")
             return false;
         }
     }
 
     /*
      * PropertyCheckCondition 이 true 를 반환하면 sayYesComponent 를 생성한다.
+     * a sayYesComponent bean will be created if PropertyCheckCondition is true.
      *
      */
     @Bean
@@ -39,8 +43,10 @@ public class ConditionalDemoConfig {
     }
 
     // TODO : #2 이 프로젝트가 web application 이 되도록 pom.xml의 의존성을 수정하세요.
+    // TODO : #2 modify the pom.xml in order to make this project as the web application.
     /*
      * 이 프로젝트가 web application 이면 sayYesComponentWeb 빈을 생성한다.
+     * a sayYesComponentWeb bean will be created if this application is the web application.
      *
      */
     @Bean
@@ -51,6 +57,7 @@ public class ConditionalDemoConfig {
 
     /*
      * 이 프로젝트가  web application 이 아니면 sayYesComponentNotWeb 빈을 생성한다.
+     * a sayYesComponentNotWeb bean will be created if this project is NOT the web application.
      *
      */
     @ConditionalOnNotWebApplication
@@ -60,6 +67,7 @@ public class ConditionalDemoConfig {
     }
 
     // TODO : #3 sayYesComponentOnBean 빈이 생성되도록 SayNoComponent 빈을 선언해 주세요.
+    // TODO : #3 create a SayNoComponent bean in order to create the sayYesComponentOnBean.
     /*
      * ???
      */
@@ -67,6 +75,7 @@ public class ConditionalDemoConfig {
 
     /*
      *  프로젝트에 SayNoComponent 타입의 빈이 등록되어 있으면 아래 빈을 생성한다.
+     *  a sayYesComponentOnBean bean will be created only if there is a bean whose type is SayNoComponent.
      *
      */
     @Bean
@@ -77,6 +86,7 @@ public class ConditionalDemoConfig {
 
     /*
      * 프로젝트에 SayNoComponent 타입의 빈이 등록되어 있지 않으면 아래 빈을 생성합니다.
+     * a sayYesComponentOnMissingBean bean will be created only if there is NOT a bean whose type is SayNoComponent.
      *
      */
     @Bean
@@ -86,8 +96,10 @@ public class ConditionalDemoConfig {
     }
 
     // TODO : #4 sayYesComponentOnClass 빈이 생성되도록 No 클래스의 이름을 수정하세요.
+    // TODO : #4 modify the method name below in order to create a sayYesComponentOnClass bean.
     /*
      * 프로젝트에 Yes 라는 이름의 클래스가 존재하면 아래 빈을 생성한다.
+     * a sayYesComponentOnClass bean will be created only if there is a class named Yes.
      */
     @Bean
     @ConditionalOnClass(name = "com.nhnent.edu.spring_boot.component.Yes")
@@ -97,6 +109,7 @@ public class ConditionalDemoConfig {
 
     /*
      * 프로젝트에 No 라는 이름의 클래스가 존재하지 않으면 아래 빈을 생성한다.
+     * a sayYesComponentOnMissingClass bean will be created only if there is NOT a class named No.
      *
      */
     @Bean
@@ -106,8 +119,10 @@ public class ConditionalDemoConfig {
     }
 
     // TODO : #5 sayYesComponentOnProperty 빈이 생성되도록 application.properties 파일을 수정하세요.
+    // TODO : #5 modify the application.properties in order to create the sayYesComponentOnProperty bean. 
     /*
      * test2 라는 속성이 존재하면 아래 빈을 생성한다.
+     * a sayYesComponentOnProperty bean will be created only if test2 property exists in the application.properties. 
      *
      */
     @Bean
@@ -117,8 +132,10 @@ public class ConditionalDemoConfig {
     }
 
     // TODO : #6 sayYesComponentOnResource 빈이 생성되도록 src/main/resources 디렉토리에 test.txt 파일을 생성하세요.
+    // TODO : #6 create the test.txt file in the src/main/resources directory in order to create the sayYesComponentOnResource bean. 
     /*
      * test.txt 파일이 존재하면 아래 빈을 생성한다.
+     * a sayYesComponentOnResource bean will be created only if the test.txt file exists in the class path.
      *
      */
     @Bean
