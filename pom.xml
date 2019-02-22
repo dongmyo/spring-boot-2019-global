@@ -3,18 +3,21 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<!-- TODO : #1 maven project 생성. -->
+	<!-- TODO : #1 maven project creation. -->
 	<groupId>com.nhnent.edu</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	
 	<!-- TODO : #2 packaging은 jar로 지정. -->
 	<!-- Spring Boot는 단독실행형 애플리케이션을 만들어 준다. -->
+	<!-- TODO : #2 jar as packaging. -->
 	<packaging>jar</packaging>
 	
 	<name>spring-boot</name>
 	<url>http://maven.apache.org</url>
 	
 	<!-- TODO : #3 Spring Boot 최상위 dependency를 설정한다. -->
+	<!-- TODO : #3 set parent dependency. -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -23,6 +26,7 @@
 
 	<dependencies>
 		<!-- TODO : #4 `spring-boot-starter-web`을 설정해서 웹 개발용 라이브러리를 설정한다. -->
+		<!-- TODO : #4 add a `spring-boot-starter-web` module. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
@@ -39,6 +43,7 @@
 	<build>
 		<plugins>
 			<!-- TODO : #5 Spring Boot 플러그인을 설정한다. -->
+			<!-- TODO : #5 spring-boot-maven-plugin is needed. -->
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
