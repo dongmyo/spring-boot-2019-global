@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Collections;
 
-// TODO : #3 Servlet 설정.
+// TODO : #3 Servlet configuration.
 @Configuration
 public class ServletConfig {
     @Bean

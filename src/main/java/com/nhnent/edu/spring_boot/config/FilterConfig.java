@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 import java.util.Collections;
 
-// TODO : #6 Filter 설정.
+// TODO : #6 Filter configuration.
 @Configuration
 public class FilterConfig {
     @Bean

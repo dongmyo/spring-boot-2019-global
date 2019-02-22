@@ -10,7 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import java.io.IOException;
 
-// TODO : #4 Filter 예제 1.
+// TODO : #4 Filter example 1.
 public class Log1Filter extends GenericFilterBean {
     private static final Logger LOGGER = LoggerFactory.getLogger(Log1Filter.class);
 
