@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @SpringBootApplication
 // TODO : #3 war로 패키징 한 경우, SpringBootServletInitializer을 상속받아 애플리케이션을 시작해야 함.
+// TODO : #3 when packaging is war, App class must be inherited from `SpringBootServletInitializer`. 
 public class App extends SpringBootServletInitializer
 {
     public static void main( String[] args ) {

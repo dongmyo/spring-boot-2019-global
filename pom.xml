@@ -7,6 +7,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 
 	<!-- TODO : #1 war로 패키징 -->
+	<!-- TODO : #1 war as packaging -->
 	<packaging>war</packaging>
 	
 	<name>spring-boot</name>
@@ -31,6 +32,7 @@
 		</dependency>
 
 		<!-- TODO : #2 JSTL 지원 및 JSP 컴파일을 위해서 두개의 의존성 라이브러리를 추가 -->
+		<!-- TODO : #2 add libraries for JSTL and JSP -->
 		<!-- JSTL for JSP -->
 		<dependency>
 			<groupId>javax.servlet</groupId>

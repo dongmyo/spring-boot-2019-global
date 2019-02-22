@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- TODO : #4 welcome.jsp 작성 -->
+<!-- TODO : #4 welcome.jsp -->
 <html lang="ko">
 <head>
     <meta charset="utf-8">
