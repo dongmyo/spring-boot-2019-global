@@ -5,8 +5,6 @@
 	<groupId>com.nhnent.edu</groupId>
 	<artifactId>spring-boot</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
-	<!-- Spring Boot는 단독실행형 애플리케이션을 만들어 준다. -->
 	<packaging>jar</packaging>
 	
 	<name>spring-boot</name>
@@ -30,12 +28,17 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- TODO : #1 `spring-boot-starter-freemarker` -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-freemarker</artifactId>
 		</dependency>
 
+		<!-- TODO : #3 `spring-boot-configuration-processor` plugin -->
+		<dependency>
+		    <groupId>org.springframework.boot</groupId>
+		    <artifactId>spring-boot-configuration-processor</artifactId>
+		    <optional>true</optional>
+		</dependency>
 	</dependencies>
 	
 	<build>

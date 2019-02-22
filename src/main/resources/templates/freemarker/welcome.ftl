@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- TODO : #2 freemarker template -->
 <html lang="ko">
 <head>
     <meta charset="utf-8">
