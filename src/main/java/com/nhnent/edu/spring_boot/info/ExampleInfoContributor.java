@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.Collections;
 
-// TODO : #1 custom InfoContributor 구현.
+// TODO : #1 custom InfoContributor implementation.
 @Component
 public class ExampleInfoContributor implements InfoContributor {
     @Override
