@@ -5,6 +5,7 @@ import org.springframework.stereotype.Component;
 
 import java.util.concurrent.atomic.AtomicReference;
 
+// TODO : #2 custom HealthIndicator implementation.
 @Component
 public class ManualHealthIndicator implements ChangeableHealthIndicator {
     private final AtomicReference<Health> healthRef = new AtomicReference<>(Health.up().build());

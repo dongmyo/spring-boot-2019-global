@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
+// TODO : #4 test case for the custom health indicator.
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 public class L7checkCheckControllerIntegrationTest {

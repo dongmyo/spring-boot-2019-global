@@ -17,6 +17,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+// TODO : #3 the controller to control the custom health indicator.
 @RestController
 @RequestMapping("${l7check.uri:/l7check}")
 public class L7checkCheckController {
