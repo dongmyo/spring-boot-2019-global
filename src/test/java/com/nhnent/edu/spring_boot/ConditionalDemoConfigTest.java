@@ -8,72 +8,52 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
 import org.springframework.test.context.junit4.SpringRunner;
 
-// TODO : #0 아래 테스트 케이스들을 모두 성공하세요.
-// TODO : #0 pass the following test cases.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class ConditionalDemoConfigTest {
     @Autowired
     private ApplicationContext applicationContext;
 
-    // 이 테스트를 성공하려면 TODO #1을 수행하세요.
-    // if you've finished TODO #1, you can pass this test case.
     @Test
     public void sayYesComponent() {
         Assert.assertTrue(containsBean("sayYesComponent"));
     }
 
-    // 이 테스트를 성공하려면 TODO #2을 수행하세요.
-    // if you've finished TODO #2, you can pass this test case.
     @Test
     public void sayYesComponentWeb() {
         Assert.assertTrue(containsBean("sayYesComponentWeb"));
     }
 
-    // 이 테스트를 성공하려면 TODO #2을 수행하세요.
-    // if you've finished TODO #2, you can pass this test case.
     @Test
     public void sayYesComponentNotWeb() {
         Assert.assertFalse(containsBean("sayYesComponentNotWeb"));
     }
 
-    // 이 테스트를 성공하려면 TODO #3을 수행하세요.
-    // if you've finished TODO #3, you can pass this test case.
     @Test
     public void sayYesComponentOnBean() {
         Assert.assertTrue(containsBean("sayYesComponentOnBean"));
     }
 
-    // 이 테스트를 성공하려면 TODO #3을 수행하세요.
-    // if you've finished TODO #3, you can pass this test case.
     @Test
     public void sayYesComponentOnMissingBean() {
         Assert.assertFalse(containsBean("sayYesComponentOnMissingBean"));
     }
 
-    // 이 테스트를 성공하려면 TODO #4을 수행하세요.
-    // if you've finished TODO #4, you can pass this test case.
     @Test
     public void sayYesComponentOnClass() {
         Assert.assertTrue(containsBean("sayYesComponentOnClass"));
     }
 
-    // 이 테스트를 성공하려면 TODO #4을 수행하세요.
-    // if you've finished TODO #4, you can pass this test case.
     @Test
     public void sayYesComponentOnMissingClass() {
         Assert.assertTrue(containsBean("sayYesComponentOnMissingClass"));
     }
 
-    // 이 테스트를 성공하려면 TODO #5을 수행하세요.
-    // if you've finished TODO #5, you can pass this test case.
     @Test
     public void sayYesComponentOnProperty() {
         Assert.assertTrue(containsBean("sayYesComponentOnProperty"));
     }
 
-    // 이 테스트를 성공하려면 TODO #6을 수행하세요.
-    // if you've finished TODO #6, you can pass this test case.
     @Test
     public void sayYesComponentOnResource() {
         Assert.assertTrue(containsBean("sayYesComponentOnResource"));
