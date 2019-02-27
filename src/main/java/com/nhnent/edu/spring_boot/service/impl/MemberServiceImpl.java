@@ -5,10 +5,8 @@ import com.nhnent.edu.spring_boot.service.MemberService;
 import com.nhnent.edu.spring_boot.service.NotificationService;
 import org.springframework.stereotype.Service;
 
-// TODO : #2 MemberService implementation.
 @Service
 public class MemberServiceImpl implements MemberService {
-    // TODO : #3 it needs notificationService.
     private final NotificationService notificationService;
 
 

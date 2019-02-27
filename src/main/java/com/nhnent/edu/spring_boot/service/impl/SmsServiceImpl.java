@@ -4,7 +4,6 @@ import com.nhnent.edu.spring_boot.service.NotificationService;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
-// TODO : #6 NotificationService implementation #2.
 @Profile("dev")
 @Service
 public class SmsServiceImpl implements NotificationService {

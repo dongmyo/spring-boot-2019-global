@@ -10,11 +10,9 @@ import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringRunner;
 
-// TODO : #7 MemberServiceImpl test.
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MemberServiceImplTest {
-    // TODO : #8 @TestConfiguration w/ using SmsServiceImpl as NotificationService.
     @TestConfiguration
     static class MemberServiceImplTestContextConfiguration {
         @Bean
@@ -27,7 +25,6 @@ public class MemberServiceImplTest {
     private MemberService memberService;
 
 
-    // TODO : #9 run this test case.
     @Test
     public void test() throws Exception {
         memberService.subscribe(new Member("zibum", "000-111-2222"));
